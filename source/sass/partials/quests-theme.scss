@@ -1,0 +1,98 @@
+.quests_page {
+  &__theme {
+    width: 100%;
+    padding: 0 150px 0 136px;
+    margin-top: 40px;
+
+    @include respond-to("sm") {
+      padding: 0 127px 0 110px;
+    }
+
+    @include respond-to("xs") {
+      @include mobile-padding;
+      margin-top: 20px;
+    }
+
+    ul {
+      width: 100%;
+
+      @include reset-ul;
+      @include flex-start-center;
+      flex-wrap: wrap;
+
+      @include respond-to("sm") {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        white-space: nowrap;
+      }
+
+      @include respond-to("sm") {
+        margin-top: 16px;
+      }
+
+      li {
+        min-height: 40px;
+        margin: 5px 40px 20px 0;
+        padding: 2px 40px 0 0;
+
+        @include flex-center-center;
+        border-right: 1px solid $light-grey;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        cursor: pointer;
+
+        @include respond-to("xs") {
+          min-height: 32px;
+          padding: 2px 16px 2px 0;
+          margin: 6px 15px 20px 0;
+        }
+
+
+        &:last-child {
+          border-right: none;
+          margin-right: 0;
+        }
+
+        &:hover {
+          opacity: 0.7;
+        }
+
+        svg {
+          margin-right: 12px;
+          cursor: pointer;
+
+          @include respond-to("sm") {
+            height: 24px;
+          }
+
+          @include respond-to("xs") {
+            margin-right: 9px;
+            margin-left: -2px;
+          }
+        }
+      }
+    }
+  }
+
+  &__theme_link {
+    max-width: 130px;
+    font-family: "RalewayBold", "Arial", sans-serif;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: $light-white;
+
+    @include links;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+    @include respond-to("xs") {
+      font-size: 14px;
+    }
+
+    &--active {
+      min-height: 28px;
+      padding-top: 5px;
+      border-bottom: 2px solid $orange;
+    }
+  }
+}

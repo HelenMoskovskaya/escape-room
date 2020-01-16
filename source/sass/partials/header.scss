@@ -1,0 +1,26 @@
+.header {
+  width: 100%;
+  padding: 24px 40px 23px 32px;
+  font-family: "RalewaySemiBold", "Arial", sans-serif;
+
+  &__wrap {
+    width: 100%;
+  }
+
+  &--quests_page {
+    position: fixed;
+    top: 0;
+    background: $deep-grey;
+    z-index: 1000;
+
+    @include respond-to("sm") {
+      position: relative;
+      background: transparent;
+    }
+  }
+
+  @include respond-to("xs") {
+    padding: 20px 0 0 0;
+    font-family: "Raleway", "Arial", sans-serif;
+  }
+}

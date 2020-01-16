@@ -1,0 +1,38 @@
+.quest_content {
+  width: 100%;
+
+  &__genre {
+    font-size: 14px;
+    line-height: 144%;
+    color: $orange;
+  }
+
+  h1 {
+    font-family: "RalewayExtraBold", "Arial", sans-serif;
+    font-size: 92px;
+    line-height: 95%;
+    letter-spacing: -0.03em;
+  }
+
+  ul {
+    @include flex-start-center;
+
+    li {
+      margin-right: 24px;
+      line-height: 144%;
+      color: $light-white;
+      border-right: 1px solid $light-grey;
+    }
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 150%;
+    color: $light-white;
+  }
+
+  a {
+    @include links;
+    @include main-button;
+  }
+}

@@ -1,3 +1,12 @@
-h1 {
-  color: red;
-}
+@import "./variables";
+@import "./mixins";
+@import "./partials/main";
+@import "./partials/main-container";
+@import "./partials/header";
+@import "./partials/navigation";
+@import "./partials/main-page";
+@import "./partials/quests-page";
+@import "./partials/quests-theme";
+@import "./partials/quests-list";
+@import "./partials/quest-content";
+@import "./partials/footer";

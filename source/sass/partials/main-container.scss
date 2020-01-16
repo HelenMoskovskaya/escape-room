@@ -1,0 +1,33 @@
+.main_container {
+  @include null;
+  width: 100%;
+  position: relative;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  &--main_page {
+    background-image: url("../img/main-bg@1x.jpg");
+    background-color: $background-color;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/main-bg@2x.jpg");
+    }
+
+    @include respond-to("xs") {
+      background-image: url("../img/main-bg-mobile@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/main-bg-mobile@2x.jpg");
+      }
+    }
+  }
+
+  &--quests_page {
+    background: $gradient-quests-page;
+  }
+}

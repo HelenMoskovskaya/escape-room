@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/RalewayRegular.woff2") format("woff2"), url("../fonts/RalewayRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RalewayBold";
+  src: url("../fonts/RalewayBold.woff2") format("woff2"), url("../fonts/RalewayBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RalewaySemiBold";
+  src: url("../fonts/RalewaySemiBold.woff2") format("woff2"), url("../fonts/RalewaySemiBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RalewayExtraBold";
+  src: url("../fonts/RalewayExtraBold.woff2") format("woff2"), url("../fonts/RalewayExtraBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@viewport {
+  width: device-width;
+  zoom: 1;
+}
+
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 14px;
+  color: $white;
+
+  @include respond-to("xs") {
+    font-size: 16px;
+  }
+}
+
+.main_container + svg {
+  display: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  font-size: inherit;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: flex;
+}
+
+.main {
+  display: flex;
+}

@@ -1,0 +1,19 @@
+$breakpoints: (
+  "xs": ("(max-width: 767px)"),
+  "sm": ("(max-width: 1023px)"),
+);
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+$white: #ffffff;
+$light-white: #e6e6e6;
+$orange: #f2890f;
+$light-orange: #f39425;
+$light-grey: rgba(255, 255, 255, 0.36);
+$deep-grey: #1e1c1c;
+$background-color: #151413;
+$light-orange: rgba(242, 137, 15, 0.74);
+
+$gradient-menu-open: linear-gradient(163.84deg, #633c0f -68.98%, #24150e 75.12%, #1a140d 132.97%);
+$gradient-quests-page: linear-gradient(0deg, #141414 0%, #1f1d1d 100%);

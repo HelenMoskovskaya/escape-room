@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="preload" href="fonts/ralewayregular.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div class="main-container">
+    <div class="main-container__content">
+  <header class="header">
+    <nav class="navigation ">
+      <div class="navigation__logo">
+        <a>
+        <svg width="134" height="50" viewBox="0 0 134 52">
+          <use xlink:href="#icon-logo"></use>
+        </svg>
+      </a>
+      </div>
+        <button type="button" class="navigation__toggle navigation__toggle--close">
+          <span class="visually-hidden">Кнопка управления меню</span>Меню</button>
+        <div class="navigation__wrapper navigation__wrapper--closed">
+        <div class="navigation__list">
+          <ul>
+        <li>
+          <a href="#">Квесты</a>
+        </li>
+        <li>
+          <a href="#">Новичкам</a>
+        </li>
+        <li>
+          <a href="#">Отзывы</a>
+        </li>
+        <li>
+          <a href="#">Акции</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+    </div>
+    <div class="navigation__contacts">
+      <button type="button">
+        <svg width="16" height="21">
+          <use xlink:href="#icon-pin"></use>
+        </svg>
+        <span>Новосибирск</span>
+      </button>
+      <a href="tel:8(383)2840160">8 (383) 284 01 60</a>
+    </div>
+  </div>
+  </nav>
+  </header>
+  <main class="form_page">
+    <div>
+    <div>
+      <span>выбранный квест</span>
+      <h1>Маньяк</h1>
+    </div>
+    <p>Вы выбрали игру 22 марта в 16:00. К оплате 1500 рублей.</p>
+    <a href="#">Перейти к оплате</a>
+  </div>
+    <section>
+      <div>
+        <label for="date">Выберите дату</label>
+        <input type="date" id="date">
+        <span>22 марта</span>
+      </div>
+      <ul>
+        <li>
+          - сводобно
+        </li>
+        <li>
+          - занято
+        </li>
+        <li>
+          - выбрано вами
+        </li>
+      </ul>
+      <form>
+        <ul>
+          <li>
+            <label>9:45</label>
+            <input type="radio">
+            <span>1400 ₽</span>
+          </li>
+          <li>
+            <label>11:00</label>
+            <input type="radio">
+            <span>1400 ₽</span>
+          </li>
+          <li>
+            <label>12:15</label>
+            <input type="radio">
+            <span>1400 ₽</span>
+          </li>
+          <li>
+            <label>13:30</label>
+            <input type="radio">
+            <span>1400 ₽</span>
+          </li>
+          <li>
+            <label>14:45</label>
+            <input type="radio">
+            <span>1400 ₽</span>
+          </li>
+          <li>
+            <label>16:00</label>
+            <input type="radio">
+            <span>1500 ₽</span>
+          </li>
+          <li>
+            <label>17:15</label>
+            <input type="radio">
+            <span>1500 ₽</span>
+          </li>
+          <li>
+            <label>18:30</label>
+            <input type="radio">
+            <span>1500 ₽</span>
+          </li>
+          <li>
+            <label>19:45</label>
+            <input type="radio">
+            <span>1500 ₽</span>
+          </li>
+          <li>
+            <label>21:00</label>
+            <input type="radio">
+            <span>1800 ₽</span>
+          </li>
+          <li>
+            <label>22:15</label>
+            <input type="radio">
+            <span>1800 ₽</span>
+          </li>
+          <li>
+            <label>23:30</label>
+            <input type="radio">
+            <span>1500 ₽</span>
+          </li>
+        </ul>
+      </form>
+
+  </section>
+  </main>
+</div>
+  <footer class="footer">
+    <ul>
+      <li class="footer__social_item footer__social_item--instagram">
+        <span class="visually-hidden">Инстаграм</span>
+        <a href="#">
+          <svg width="28" height="28">
+            <use xlink:href="#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer__social_item footer__social_item--vkontakte">
+        <span class="visually-hidden">Вконтакте</span>
+        <a href="#">
+          <svg width="28" height="28">
+            <use xlink:href="#icon-vk"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <button type="button">Задать вопрос</button>
+  </footer>
+</div>
+  <include src="build/img/sprite_auto.svg"></include>
+  <script src="js/main.js"></script>
+</body>
+</html>

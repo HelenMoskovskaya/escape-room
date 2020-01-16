@@ -1,0 +1,113 @@
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+
+  @else {
+    @error "Не указано значение для `#{$breakpoint}`";
+  }
+}
+
+@mixin null {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin reset-ul {
+  @include null;
+  list-style: none;
+}
+
+@mixin links {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@mixin button {
+  border: none;
+  background-color: transparent;
+  overflow-wrap: break-word;
+  cursor: pointer;
+}
+
+@mixin main-button {
+  width: 250px;
+  height: 65px;
+
+  @include flex-center-center;
+  font-family: "RalewayBold", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $orange;
+  border-radius: 65px;
+}
+
+@mixin flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-start-center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin flex-end-center {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@mixin flex-center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin before {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+@mixin h1 {
+  @include null;
+  text-align: left;
+  font-family: "RalewayExtraBold", "Arial", sans-serif;
+  font-size: 64px;
+  line-height: 110%;
+
+  @include respond-to("sm") {
+    font-size: 46px;
+  }
+
+  @include respond-to("xs") {
+    font-size: 36px;
+    text-align: center;
+  }
+}
+
+@mixin quests-list-description {
+  font-size: 13px;
+  line-height: 144%;
+  opacity: 0.8;
+  color: $light-white;
+
+  @include normalize-numbers;
+}
+
+@mixin normalize-numbers {
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" on;
+}
+
+@mixin mobile-padding {
+  padding: 0 16px 0 16px;
+}

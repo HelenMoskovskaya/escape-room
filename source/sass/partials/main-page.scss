@@ -1,0 +1,74 @@
+.main_page {
+  width: 100%;
+  min-height: calc(100vh - 153px);
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+
+  @include respond-to("xs") {
+    min-height: calc(100vh - 62px);
+    padding-bottom: 64px;
+    align-items: flex-end;
+  }
+
+  &__content {
+    padding: 87px 32px 123px 136px;
+    display: flex;
+    flex-direction: column;
+
+    @include respond-to("xs") {
+      width: 100%;
+      position: relative;
+      top: 0;
+      transform: translateY(0%);
+      padding: 0 16px 0 16px;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  h1 {
+    width: 50%;
+
+    @include null;
+    @include h1;
+
+    @include respond-to("xs") {
+      width: 100%;
+    }
+  }
+
+  p {
+    width: 45%;
+
+    @include null;
+    margin: 32px 0 0 0;
+    font-size: 17px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: $light-white;
+
+    @include respond-to("xs") {
+      display: none;
+    }
+  }
+
+  a {
+    margin-top: 68px;
+
+    @include links;
+    @include main-button;
+
+    &:hover {
+      background-color: $light-orange;
+    }
+
+    @include respond-to("xs") {
+      width: 185px;
+      height: 47px;
+      margin-top: 33px;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}

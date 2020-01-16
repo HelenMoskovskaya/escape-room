@@ -1,0 +1,128 @@
+.footer {
+  width: 100%;
+  padding: 0 32px 24px 32px;
+  min-height: 53px;
+  display: flex;
+
+  @include flex-between-center;
+  z-index: 20000;
+
+  &--quests_page {
+    position: fixed;
+    bottom: 0;
+
+    @include respond-to("sm") {
+      position: relative;
+    }
+  }
+
+  @include respond-to("xs") {
+    display: none;
+    position: relative;
+
+    &--visible {
+      position: fixed;
+      bottom: 0;
+      display: flex;
+      padding: 0 16px 37px 16px;
+    }
+  }
+
+  ul {
+    @include reset-ul;
+    display: flex;
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+
+      @include links;
+    }
+  }
+
+  &__social_item {
+    width: 28px;
+    height: 28px;
+    margin-right: 7px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+
+    @include respond-to("xs") {
+      width: 36px;
+      height: 36px;
+      margin-right: 17px;
+    }
+
+    &--vkontakte {
+      background-image: url("../img/icon-vk-default.svg");
+
+      &:hover {
+        background-image: url("../img/icon-vk-hover.svg");
+      }
+    }
+
+    &--instagram {
+      background-image: url("../img/icon-instagram-default.svg");
+
+      &:hover {
+        background-image: url("../img/icon-instagram-hover.svg");
+      }
+    }
+  }
+
+  button {
+    position: relative;
+    width: 83px;
+
+    @include null;
+    @include button;
+    margin-top: 5px;
+    font-family: "Raleway", "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 144%;
+    text-align: right;
+    color: $light-white;
+    border-bottom: 1px dashed $light-white;
+
+    &:hover,
+    &:focus {
+      color: $orange;
+      border-bottom: 1px dashed $orange;
+      width: calc(83px + 10px);
+
+      &::before {
+        @include before;
+        content: "?";
+        top: 0;
+        left: 0;
+      }
+    }
+
+    @include respond-to("xs") {
+      width: 119px;
+      min-height: 30px;
+      margin-top: -5px;
+
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.04em;
+
+
+      &:hover,
+      &:focus {
+        color: $light-white;
+        border-bottom: 1px dashed $light-white;
+        width: 119px;
+
+        &::before {
+          @include before;
+          content: "";
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+}
