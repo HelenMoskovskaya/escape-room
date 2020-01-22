@@ -1,0 +1,17 @@
+.desc_page {
+  width: 100%;
+  min-height: 596px;
+  padding: 30px 30px 10px 0;
+  margin-top: 19px;
+  display: flex;
+  justify-content: flex-end;
+
+  @include respond-to("sm") {
+    padding: 30px 10px 24px 30px;
+  }
+
+  @include respond-to("xs") {
+    padding: 8px 16px 24px 16px;
+    flex-direction: column;
+  }
+}

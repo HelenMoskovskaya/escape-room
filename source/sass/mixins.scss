@@ -45,6 +45,10 @@
   color: $white;
   background-color: $orange;
   border-radius: 65px;
+
+  &:hover {
+    background-color: $light-orange;
+  }
 }
 
 @mixin flex-between-center {
@@ -57,6 +61,12 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+@mixin flex-start-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 @mixin flex-end-center {

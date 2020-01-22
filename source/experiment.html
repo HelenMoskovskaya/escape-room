@@ -1,117 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="preload" href="fonts/ralewayregular.woff2" as="font">
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
-<body>
-  <div class="main-container">
-    <div class="main-container__content">
-  <header class="header">
-    <nav class="navigation ">
-      <div class="navigation__logo">
-        <a>
-        <svg width="134" height="50" viewBox="0 0 134 52">
-          <use xlink:href="#icon-logo"></use>
-        </svg>
-      </a>
-      </div>
-        <button type="button" class="navigation__toggle navigation__toggle--close">
-          <span class="visually-hidden">Кнопка управления меню</span>Меню</button>
-        <div class="navigation__wrapper navigation__wrapper--closed">
-        <div class="navigation__list">
-          <ul>
-        <li>
-          <a href="#">Квесты</a>
-        </li>
-        <li>
-          <a href="#">Новичкам</a>
-        </li>
-        <li>
-          <a href="#">Отзывы</a>
-        </li>
-        <li>
-          <a href="#">Акции</a>
-        </li>
-        <li>
-          <a href="#">Контакты</a>
-        </li>
-      </ul>
-    </div>
-    <div class="navigation__contacts">
-      <button type="button">
-        <svg width="16" height="21">
-          <use xlink:href="#icon-pin"></use>
-        </svg>
-        <span>Новосибирск</span>
-      </button>
-      <a href="tel:8(383)2840160">8 (383) 284 01 60</a>
-    </div>
-  </div>
-  </nav>
-  </header>
-  <main class="experiment_page">
-    <span>приключение, детектив</span>
-    <h1>Фатальный эксперимент</h1>
-    <section>
-    <ul>
-      <li>
-        <svg width="24" height="24">
-          <use xlink:href="#icon-clock"></use>
-        </svg>
-        <span>90 мин</span>
-      </li>
-      <li>
-        <svg width="19" height="24">
-          <use xlink:href="#icon-person"></use>
-        </svg>
-        <span>5–8 чел</span>
-      </li>
-      <li>
-        <svg width="21" height="21">
-          <use xlink:href="#icon-puzzle"></use>
-        </svg>
-        <span>высокая сложность</span>
-      </li>
-    </ul>
-    <p>
-      Вы стоите на пороге нового научного открытия, которое перевернет судьбу человечества.
-      Но что-то идёт не так, и ядерный реактор, который работает на полную мощность,
-      сигнализирует о скорой поломке. Удастя ли вам починить его в отведенное время и
-      предотвратить гибель людей в этом фатальном эксперимете?
-    </p>
-    <a>Забронировать</a>
-  </section>
-  </section>
-  </main>
-</div>
-  <footer class="footer">
-    <ul>
-      <li class="footer__social_item footer__social_item--instagram">
-        <span class="visually-hidden">Инстаграм</span>
-        <a href="#">
-          <svg width="28" height="28">
-            <use xlink:href="#icon-instagram"></use>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="preload" href="fonts/ralewayregular.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="main_container main_container--experiment_page">
+      <header class="header">
+        <nav class="navigation navigation--closed">
+          <div class="navigation__toggle_wrap">
+            <div class="navigation__logo navigation__logo--active">
+              <a href="index.html">
+                <svg width="134" height="50" viewBox="0 0 134 52">
+                  <use xlink:href="#icon-logo"></use>
+                </svg>
+              </a>
+            </div>
+            <button type="button" class="navigation__toggle">
+            <span class="visually-hidden">Кнопка управления меню</span>Меню</button>
+          </div>
+          <div class="navigation__wrapper">
+            <div class="navigation__list">
+              <ul>
+                <li>
+                  <a class="navigation__link navigation__link--active" href="quests.html">Квесты</a>
+                </li>
+                <li>
+                  <a class="navigation__link" href="#">Новичкам</a>
+                </li>
+                <li>
+                  <a class="navigation__link" href="#">Отзывы</a>
+                </li>
+                <li>
+                  <a class="navigation__link" href="#">Акции</a>
+                </li>
+                <li>
+                  <a class="navigation__link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="navigation__contacts">
+              <button type="button">
+                <svg width="16" height="21">
+                  <use xlink:href="#icon-pin"></use>
+                </svg>
+                <span>Новосибирск</span>
+              </button>
+              <a href="tel:8(383)2840160">8 (383) 284 01 60</a>
+            </div>
+          </div>
+        </nav>
+        <div class="header__link_back">
+          <svg width="6" height="10">
+            <use xlink:href="#icon-left-arrow"></use>
           </svg>
-        </a>
-      </li>
-      <li class="footer__social_item footer__social_item--vkontakte">
-        <span class="visually-hidden">Вконтакте</span>
-        <a href="#">
-          <svg width="28" height="28">
-            <use xlink:href="#icon-vk"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-    <button type="button">Задать вопрос</button>
-  </footer>
-</div>
-  <include src="build/img/sprite_auto.svg"></include>
-  <script src="js/main.js"></script>
-</body>
+          <a href="quests.html">Все квесты</a>
+        </div>
+      </header>
+      <main class="main desc_page">
+        <div class="quest_content">
+          <div class="quest_content__title">
+          <span>приключение, детектив</span>
+          <h1>Фатальный эксперимент</h1>
+        </div>
+          <section>
+            <h2 class="visually-hidden">Подробное описание квеста Фатальный эксперимент</h2>
+            <ul>
+              <li>
+                <svg width="24" height="24">
+                  <use xlink:href="#icon-clock"></use>
+                </svg>
+                <span>90 мин</span>
+              </li>
+              <li>
+                <svg width="19" height="24" viewBox="0 0 13 16">
+                  <use xlink:href="#icon-person"></use>
+                </svg>
+                <span>5–8 чел</span>
+              </li>
+              <li>
+                <svg width="24" height="24" viewBox="0 0 16 16">
+                  <use xlink:href="#icon-puzzle"></use>
+                </svg>
+                <span>высокая сложность</span>
+              </li>
+            </ul>
+            <p>
+              Вы стоите на пороге нового научного открытия, которое
+              перевернет судьбу человечества. Но что-то идёт не так, и
+              ядерный реактор, который работает на полную мощность,
+              сигнализирует о скорой поломке. Удастя ли вам починить
+              его в отведенное время и предотвратить гибель людей в этом
+              фатальном эксперимете?
+            </p>
+            <a href="reservation.html">Забронировать</a>
+          </section>
+        </div>
+      </main>
+      <footer class="footer">
+        <ul>
+          <li class="footer__social_item footer__social_item--instagram">
+            <span class="visually-hidden">Инстаграм</span>
+            <a href="#">
+              <svg width="28" height="28">
+                <use xlink:href="#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social_item footer__social_item--vkontakte">
+            <span class="visually-hidden">Вконтакте</span>
+            <a href="#">
+              <svg width="28" height="28">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <button type="button">Задать вопрос</button>
+      </footer>
+    </div>
+    <include src="build/img/sprite_auto.svg"></include>
+    <script src="js/main.js"></script>
+  </body>
 </html>

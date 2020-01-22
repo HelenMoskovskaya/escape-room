@@ -19,8 +19,35 @@
     }
   }
 
+  &__link_back {
+    display: none;
+
+    @include respond-to("xs") {
+      display: flex;
+      @include flex-start-start;
+      margin: 28px 0 10px 16px;
+
+      a {
+        margin-left: 8px;
+        @include links;
+        font-family: "RalewayBold", "Arial", sans-serif;
+        font-size: 12px;
+        line-height: 144%;
+        letter-spacing: 0.02em;
+        color: $light-white;
+        text-transform: uppercase;
+      }
+
+      svg {
+        margin-top: 2px;
+        fill: transparent;
+      }
+    }
+  }
+
   @include respond-to("xs") {
     padding: 20px 0 0 0;
     font-family: "Raleway", "Arial", sans-serif;
   }
+
 }

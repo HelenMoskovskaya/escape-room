@@ -30,4 +30,77 @@
   &--quests_page {
     background: $gradient-quests-page;
   }
+
+  &--maniac_page {
+    background-image: url("../img/maniac-bg@1x.jpg");
+    background-color: $background-single-quest;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/maniac-bg@2x.jpg");
+    }
+
+    @include respond-to("sm") {
+      background-position: 35% center;
+    }
+
+    @include respond-to("xs") {
+      background-image: url("../img/maniac-bg-mobile@1x.jpg");
+      background-position: top center;
+      background-size: 100% auto;
+    }
+  }
+
+  &--mansion_page {
+    background-image: url("../img/mansion-bg@1x.jpg");
+    background-color: $background-single-quest;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/mansion-bg@2x.jpg");
+    }
+
+    @include respond-to("xs") {
+      background-image: url("../img/mansion-bg-mobile@1x.jpg");
+      background-size: 100% auto;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/mansion-bg-mobile@2x.jpg");
+      }
+    }
+  }
+
+  &--ritual_page {
+    background-image: url("../img/ritual-bg@1x.jpg");
+    background-color: $background-single-quest;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/ritual-bg@2x.jpg");
+    }
+
+    @include respond-to("xs") {
+      background-image: url("../img/ritual-bg-mobile@1x.jpg");
+      background-size: 100% auto;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/ritual-bg-mobile@2x.jpg");
+      }
+    }
+  }
+
+  &--experiment_page {
+    background-image: url("../img/experiment-bg@1x.jpg");
+    background-color: $background-single-quest;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/experiment-bg@2x.jpg");
+    }
+
+    @include respond-to("xs") {
+      background-image: url("../img/experiment-bg-mobile@1x.jpg");
+      background-size: 100% auto;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/experiment-bg-mobile@2x.jpg");
+      }
+    }
+  }
 }

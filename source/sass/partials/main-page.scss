@@ -59,10 +59,6 @@
     @include links;
     @include main-button;
 
-    &:hover {
-      background-color: $light-orange;
-    }
-
     @include respond-to("xs") {
       width: 185px;
       height: 47px;
